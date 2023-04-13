@@ -43,9 +43,28 @@ void LinearSearch()
         // Accept the number to be searched
         cout << "\nEnter the element you want to search: "; //Langkah no 1 Algortima
         int item;
+        cin >> item;
 
-    }
+        ctr = 0;
+        for (i = 0; i < n; i++)                             //Langkah no 2 & 3 & 4 
+        {
+            ctr++;
+            if (arr[i] == item)                             //Langkah n0 5 Algoritma
+            {
+                cout << "\n" << item << " found at position " << (i + 1) << endl;
+                break;
+            }
+        }
+
+        if (i == n)                                         //Langkah no 5 Algorima
+            cout << "\n" << item << " not found in the array\n";
+        cout << "\nNumber of comparisons: " << ctr << endl;
+
+        cout << "\nContinue search (y/n): ";
+        cin >> ch;
+    } while ((ch == 'y') || (ch == 'y'));
 }
+
 
 int main()
 {
