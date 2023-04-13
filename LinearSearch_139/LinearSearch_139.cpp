@@ -9,6 +9,11 @@ int n; // Number of elements in the array
 int i; // index of array element
 
 
+void input()
+[
+
+]
+
 int main()
 {
     std::cout << "Hello World!\n";
